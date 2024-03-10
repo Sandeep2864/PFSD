@@ -1,0 +1,83 @@
+* {
+    margin: 0px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:solid thin cadetblue;
+    position: fixed;
+    padding-left:100px;
+    padding-right:100px;
+    width:100%;
+    margin:0px;
+    background-color: white;
+}
+.about{
+    padding-top:10px;
+    padding-right: 15px;
+    cursor: pointer;
+    color: #6c757d;
+    font-weight: bold;
+}
+.about:hover{
+    color: rgb(32, 159, 233);
+}
+.top div {
+    padding-right: 200px;
+}
+.logo{
+   width:150px;
+   height:80px;
+   cursor: pointer;
+}
+.log{
+    width: 5rem;
+    height: 2rem;
+    border-radius: 5px;
+    border: none;
+    background-color: aqua;
+    color: wheat;
+    font-weight: bold;
+    cursor: pointer;
+}
+.next{
+    padding-top:100px;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 30px;
+    padding-right:30px;
+}
+.next div button img{
+    width:150px;
+    height:40px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    margin-top:100px;
+}
+.text div{
+    padding-top:30px;
+}
+.next div button {
+    background-color: white;
+}
+.bharat {
+    font-size:30px;
+    font-weight: 900;
+    padding-top:100px;
+}
+.next div p {
+    font-size: xx-large;
+    font-weight: 100;
+}
+.next div h5 {
+    font-size: x-large;
+}
+.main img{
+    max-height: 585px;
+    max-width: 100%;
+    margin-top: 20px;
+    margin-right: 10px;
+}

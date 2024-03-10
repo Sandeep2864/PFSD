@@ -1,0 +1,168 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Job Opportunities for Students</title>
+          <link rel="stylesheet" href="{% static 'jobs.css' %}">
+ </head>
+ <body style="font-family: 'Open Sans', sans-serif;;margin: 0px;">
+    <section class="side">
+        <div class="flex1" style="padding-bottom:30px;">
+            <div>
+                <img src="{% static 'image.png' %}" alt="">
+            </div>
+            <div>
+                <h1 style="color:white">Id:</h1> <h1>2200030956</h1>
+            </div>
+        </div>
+        <div class="flex2">
+            <div class="info">
+                <h2><a href="http://127.0.0.1:8000/dashboard/profile" style="text-decoration: none; color:wheat">profile</a> </h2>
+            </div>
+            <div class="info">
+                <h2><a href="http://127.0.0.1:8000/dashboard/practice" style="text-decoration: none; color:wheat">practice</a> </h2>
+            </div>
+            <div class="info">
+                <h2><a href="http://127.0.0.1:8000/dashboard/apply" style="text-decoration: none; color:wheat">Apply</a> </h2>
+            </div>
+            <div class="info">
+                <h2><a href="http://127.0.0.1:8000/dashboard/jobs" style="text-decoration: none; color:wheat">Jobs</a> </h2>
+            </div>
+        </div>
+    </section>
+    <div class="company" id="company1">
+      <img src="{% static 'c1.jpg' %}" alt="Company 1" />
+      <div class="company-details">
+        <h2>Company 1: Tech Innovations Inc.</h2>
+        <p>
+          <strong>Skills Required:</strong><br />
+          - Proficiency in Python and JavaScript<br />
+          - Experience with React.js and Django frameworks<br />
+          - Strong problem-solving skills<br />
+          - Excellent teamwork and communication abilities
+        </p>
+        <p>
+          <strong>Description:</strong> Tech Innovations Inc. is a leading tech
+          company specializing in developing innovative solutions for various
+          industries. We are seeking talented students who are passionate about
+          software development to join our team.
+        </p>
+        <button class="apply-btn" onclick="apply('company1')">Apply Now</button>
+        <span class="applicants" id="applicants_company1">0 applicants</span>
+      </div>
+    </div>
+
+    <div class="company" id="company2">
+      <img src="{% static 'c2.jpg' %}" alt="Company 2" />
+      <div class="company-details">
+        <h2>Company 2: Marketing Dynamics Agency</h2>
+        <p>
+          <strong>Skills Required:</strong><br />
+          - Marketing experience<br />
+          - Proficiency in social media management<br />
+          - Strong written and verbal communication skills<br />
+          - Creativity and ability to think outside the box
+        </p>
+        <p>
+          <strong>Description:</strong> Marketing Dynamics Agency is a dynamic
+          and fast-paced marketing firm specializing in digital marketing
+          strategies for businesses. We are looking for enthusiastic students
+          who are eager to learn and contribute to our team.
+        </p>
+        <button class="apply-btn" onclick="apply('company2')">Apply Now</button>
+        <span class="applicants" id="applicants_company2">0 applicants</span>
+      </div>
+    </div>
+
+    <div class="company" id="company3">
+      <img src="{% static 'c3.png' %}" alt="Company 3" />
+      <div class="company-details">
+        <h2>Company 3: GreenTech Solutions</h2>
+        <p>
+          <strong>Skills Required:</strong><br />
+          - Knowledge of renewable energy technologies<br />
+          - Strong research and analytical skills<br />
+          - Ability to work independently and as part of a team<br />
+          - Passion for environmental sustainability
+        </p>
+        <p>
+          <strong>Description:</strong> GreenTech Solutions is a leading
+          provider of renewable energy solutions. We are seeking motivated
+          students who are passionate about sustainability to join our team and
+          contribute to our mission of creating a greener future.
+        </p>
+        <button class="apply-btn" onclick="apply('company3')">Apply Now</button>
+        <span class="applicants" id="applicants_company3">0 applicants</span>
+      </div>
+    </div>
+  <div class="company" id="company4">
+      <img src="{% static 'c4.png' %}" alt="Company 4" />
+      <div class="company-details">
+        <h2>Company 4: Finance Pro Consultants</h2>
+        <p>
+          <strong>Skills Required:</strong><br />
+          - Strong analytical and quantitative skills<br />
+          - Knowledge of financial modeling and analysis<br />
+          - Familiarity with accounting principles<br />
+          - Attention to detail and accuracy
+        </p>
+        <p>
+          <strong>Description:</strong> Finance Pro Consultants is a premier
+          financial consulting firm providing expert advice to clients
+          worldwide. We are looking for dedicated students with a passion for
+          finance to join our team and gain valuable hands-on experience.
+        </p>
+        <button class="apply-btn" onclick="apply('company4')">Apply Now</button>
+        <span class="applicants" id="applicants_company4">0 applicants</span>
+      </div>
+    </div>
+
+    <div class="company" id="company5">
+      <img src="{% static 'c5.jpg' %}" alt="Company 5" />
+      <div class="company-details">
+        <h2>Company 5: HealthTech Innovations</h2>
+        <p>
+          <strong>Skills Required:</strong><br />
+          - Background in healthcare or life sciences<br />
+          - Familiarity with healthcare technologies<br />
+          - Strong problem-solving and critical thinking skills<br />
+          - Ability to work in a fast-paced environment
+        </p>
+        <p>
+          <strong>Description:</strong> HealthTech Innovations is a cutting-edge
+          healthcare technology company dedicated to improving patient outcomes.
+          We are seeking motivated students with a passion for healthcare
+          innovation to join our team and contribute to our mission.
+        </p>
+        <button class="apply-btn" onclick="apply('company5')">Apply Now</button>
+        <span class="applicants" id="applicants_company5">0 applicants</span>
+      </div>
+    </div>
+
+    <script>
+      // Object to store number of applicants for each company
+      const applicants = {
+        company1: 0,
+        company2: 0,
+        company3: 0,
+        company4: 0,
+        company5: 0,
+      };
+
+      // Function to handle applying for a job
+      function apply(company) {
+        applicants[company]++;
+        updateApplicants(company);
+      }
+
+      // Function to update the number of applicants displayed
+      function updateApplicants(company) {
+        const applicantsSpan = document.getElementById(`applicants_${company}`);
+        applicantsSpan.textContent = `${applicants[company]} applicant${
+          applicants[company] !== 1 ? "s" : ""
+        }`;
+      }
+    </script>
+  </body>
+</html>

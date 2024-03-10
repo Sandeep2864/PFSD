@@ -1,0 +1,79 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'profile.css' %}">
+</head>
+<body style="font-family: 'Open Sans', sans-serif;;margin: 0px;">
+    <section class="side">
+            <div class="flex1" style="padding-bottom:30px;">
+            <div>
+                <img src="{% static 'image.png' %}" alt="">
+        </div>
+        <div>
+            <h1 style="color:white">Id:</h1> <h1>2200030956</h1>
+        </div>
+        </div>
+   <div class="flex2">
+            <div class="info">
+                <h2><a href="http://127.0.0.1:8000/dashboard/profile" style="text-decoration: none; color:wheat">profile</a> </h2>
+            </div>
+            <div class="info">
+                <h2><a href="http://127.0.0.1:8000/dashboard/practice" style="text-decoration: none; color:wheat">practice</a> </h2>
+            </div>
+            <div class="info">
+                <h2><a href="http://127.0.0.1:8000/dashboard/apply" style="text-decoration: none; color:wheat">Apply</a> </h2>
+            </div>
+            <div class="info">
+                <h2><a href="http://127.0.0.1:8000/dashboard/jobs" style="text-decoration: none; color:wheat">Jobs</a> </h2>
+            </div>
+        </div>
+    </section>
+        <div class="container">
+            <h1>User Profile</h1>
+            <div class="field">
+                <label for="name">Name:</label>
+                <input type="text" id="name" value="John Doe" disabled>
+                <button class="edit-btn" onclick="enableEdit('name')">Edit</button>
+            </div>
+            <div class="field">
+                <label for="email">Email:</label>
+                <input type="text" id="email" value="john@example.com" disabled>
+                <button class="edit-btn" onclick="enableEdit('email')">Edit</button>
+            </div>
+            <div class="field">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" value="123-456-7890" disabled>
+                <button class="edit-btn" onclick="enableEdit('phone')">Edit</button>
+            </div>
+            <div class="field">
+                <label for="username">Username:</label>
+                <input type="text" id="username" value="johndoe123" disabled>
+                <button class="edit-btn" onclick="enableEdit('username')">Edit</button>
+            </div>
+            <div class="buttons-container">
+                <button class="save-btn" onclick="saveChanges()" style="display: none;">Save</button>
+                <button class="logout-btn" onclick="logout()">Logout</button>
+            </div>
+        </div>
+        <script>
+            function enableEdit(fieldId) {
+                var field = document.getElementById(fieldId);
+                field.disabled = !field.disabled;
+                field.focus(); // Focus the field after enabling editing
+            }
+
+            function saveChanges() {
+                // Implement save functionality here
+                alert("Changes saved!");
+            }
+
+            function logout() {
+                // Implement logout functionality here
+                alert("You have been logged out.");
+            }
+        </script>
+</body>
+</html>

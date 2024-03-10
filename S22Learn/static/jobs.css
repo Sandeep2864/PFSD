@@ -1,0 +1,85 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.side{
+    background-color: blueviolet;
+    width:200px;
+    height:100vh;
+    padding:0px;
+    margin:0px;
+    position: fixed;
+}
+.side img{
+    width:100px;
+    height:100px;
+    padding-top:34px;
+    border-radius: 20%;
+}
+.side .flex1 div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top:10px;
+}
+.side .flex2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.side .flex2 .info {
+    padding-top:10px;
+    border:0.25rem solid #ffff;
+    padding-left:70px;
+    padding-right:70px;
+    border-radius: 10px;
+    background-color: darkorange;
+    margin-top:10px;
+}
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+      }
+      .company {
+        background-color: #fff;
+        margin: 20px auto;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        max-width: 800px; /* Increased width to accommodate larger images */
+        display: flex;
+        align-items: center; /* Center align items vertically */
+      }
+      .company img {
+        max-width: 300px; /* Increased max-width for the image */
+        border-radius: 8px;
+        margin-right: 10px; /* Increased margin for more space */
+      }
+      .company-details {
+        flex: 1;
+        margin-left: 10px; /* Added margin to move text to the right */
+      }
+      .apply-btn {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+      .apply-btn:hover {
+        background-color: #0056b3;
+      }
+      .applicants {
+        font-size: 14px;
+        color: #555;
+        margin-top: 10px;
+        margin-left: 200px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        background-color: #f0f0f0;
+      }

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+
+
+</style>
+<body>
+<form method="post" class="form" action="{% url 'add' %}">
+    {% csrf_token %}
+
+    Name: <input type="text" name="name" required><br>
+    Age: <input type="number" name="age" required>
+    <input type="hidden" name="redirect_url" value="{% url 'view' %}">
+    <button type="submit">ADD</button>
+</form>
+</body>
+</html>

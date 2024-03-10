@@ -1,0 +1,32 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{% static 'login.css' %}">
+</head>
+<body>
+    <div class="background">
+           {% csrf_token %}
+        <img src="{% static 'place.jpeg'%}" alt="">
+    <div class="login">
+        <div class="main">
+            <div>
+                Username: <input type="text">
+            </div>
+            <div>
+                Password: <input type="password">
+            </div>
+            <div>
+                <button type="submit"><a href="http://127.0.0.1:8000/reg">Submit</a></button>
+            </div>
+            <p>if you don't have account</p><a href="http://127.0.0.1:8000/signup">sign up</a>
+        </div>
+    </div>
+        <div>
+        </div>
+    </div>
+    </section>
+</body>
+</html>

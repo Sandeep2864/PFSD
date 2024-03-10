@@ -1,0 +1,212 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'apply.css' %}">
+</head>
+<body style="font-family: 'Open Sans', sans-serif;;margin: 0px;">
+
+    <section class="side">
+        <div class="flex1" style="padding-bottom:30px;">
+            <div>
+                <img src="{% static 'image.png' %}" alt="">
+            </div>
+            <div>
+                <h1 style="color:white">Id:</h1> <h1>2200030956</h1>
+            </div>
+        </div>
+        <div class="flex2">
+            <div class="info">
+                <h2><a href="http://127.0.0.1:8000/dashboard/profile" style="text-decoration: none; color:wheat">profile</a> </h2>
+            </div>
+            <div class="info">
+                <h2><a href="http://127.0.0.1:8000/dashboard/practice" style="text-decoration: none; color:wheat">practice</a> </h2>
+            </div>
+            <div class="info">
+                <h2><a href="http://127.0.0.1:8000/dashboard/apply" style="text-decoration: none; color:wheat">Apply</a> </h2>
+            </div>
+            <div class="info">
+                <h2><a href="http://127.0.0.1:8000/dashboard/jobs" style="text-decoration: none; color:wheat">Jobs</a> </h2>
+            </div>
+        </div>
+    </section>
+
+    <section class="train">
+        <div style="padding-bottom:30px;">
+
+        </div>
+        <div class="box">
+            <p>We want to hire the engineers with <br> the following skills:</p>
+            <ul>
+                <li>Python fullstack knowledge</li>
+                <li>Media queries</li>
+                <li>Bootstrap</li>
+                <li>System design</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="anotherpage">
+        <div style="padding-top:100px">
+        </div>
+        <div class="box">
+            <div class="box1">
+                <img src="{% static 'insta.png' %}" alt="">
+                <p>Instagram</p>
+            </div>
+            <div class="box1_1">
+
+            </div>
+            <div class="box2">
+                <p> We want to hire the engineers with <br>
+                the following skills:</p>
+                <ul>
+                    <li>Python fullstack knowledge</li>
+                    <li>Media queries</li>
+                    <li>Bootstrap</li>
+                    <li>System design</li>
+                </ul>
+            </div>
+            <div class="box3">
+                <button onclick="apply()">Apply</button>
+                <p id="text" style="display:none;">Successfully applied!</p>
+                <script>
+                    function apply() {
+                        var box = document.querySelector('.train');
+                        var text = document.getElementById('text');
+                        if (box.style.display === "none") {
+                            box.style.display = "block";
+                            text.style.display = "block";
+                        } else {
+                            box.style.display = "none";
+                            text.style.display = "none";
+                        }
+                        document.getElementById('container').style.position = "absolute";
+                    }
+                </script>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="train">
+        <div style="padding-bottom:30px;">
+
+        </div>
+        <div class="box">
+            <p>We want to hire the engineers with <br> the following skills:</p>
+            <ul>
+                <li>Python fullstack knowledge</li>
+                <li>Media queries</li>
+                <li>Bootstrap</li>
+                <li>System design</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="anotherpage">
+        <div style="padding-top:100px">
+        </div>
+        <div class="box">
+            <div class="box1">
+                <img src="{% static 'toko.png' %}" alt="">
+                <p>Instagram</p>
+            </div>
+            <div class="box1_1">
+
+            </div>
+            <div class="box2">
+                <p> We want to hire the engineers with <br>
+                the following skills:</p>
+                <ul>
+                    <li>mern fullstack knowledge</li>
+                    <li>Media queries</li>
+                    <li>Bootstrap</li>
+                    <li>System upgrade</li>
+                </ul>
+            </div>
+            <div class="box3">
+                <button onclick="apply()">Apply</button>
+                <p id="text" style="display:none;">Successfully applied!</p>
+                <script>
+                    function apply() {
+                        var box = document.querySelector('.train');
+                        var text = document.getElementById('text');
+                        if (box.style.display === "none") {
+                            box.style.display = "block";
+                            text.style.display = "block";
+                        } else {
+                            box.style.display = "none";
+                            text.style.display = "none";
+                        }
+                        document.getElementById('container').style.position = "absolute";
+                    }
+                </script>
+
+
+            </div>
+        </div>
+    </section>
+    <section class="train">
+        <div style="padding-bottom:30px;">
+
+        </div>
+        <div class="box">
+            <p>We want to hire the engineers with <br> the following skills:</p>
+            <ul>
+                <li>Python fullstack knowledge</li>
+                <li>Media queries</li>
+                <li>tail</li>
+                <li>System design</li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="anotherpage">
+        <div style="padding-top:100px">
+        </div>
+        <div class="box">
+            <div class="box1">
+                <img src="{% static 'youtube.png' %}" alt="">
+                <p>Instagram</p>
+            </div>
+            <div class="box1_1">
+
+            </div>
+            <div class="box2">
+                <p> We want to hire the engineers with <br>
+                the following skills:</p>
+                <ul>
+                    <li>Python fullstack knowledge</li>
+                    <li>Media queries</li>
+                    <li>Bootstrap</li>
+                    <li>System design</li>
+                </ul>
+            </div>
+            <div class="box3">
+                <button onclick="apply()">Apply</button>
+                <p id="text" style="display:none;">Successfully applied!</p>
+                <script>
+                    function apply() {
+                        var box = document.querySelector('.train');
+                        var text = document.getElementById('text');
+                        if (box.style.display === "none") {
+                            box.style.display = "block";
+                            text.style.display = "block";
+                        } else {
+                            box.style.display = "none";
+                            text.style.display = "none";
+                        }
+                        document.getElementById('container').style.position = "absolute";
+                    }
+                </script>
+
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Setting up the background color and font styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Centering the sign-up form */
+.signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: absolute;
+}
+
+/* Styling the sign-up form container */
+.main {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Styling the form title */
+.main h2 {
+    margin-bottom: 20px;
+}
+
+/* Styling the form input fields and labels */
+.main input[type="text"],
+.main input[type="email"],
+.main input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.main label {
+    display: block;
+    text-align: left;
+}
+
+/* Styling the submit button */
+.main button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Styling the submit button on hover */
+.main button:hover {
+    background-color: #0056b3;
+}
+
+/* Styling the link for already have an account */
+.main p {
+    margin-top: 20px;
+}
+
+.main p a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.main p a:hover {
+    text-decoration: underline;
+}
+.background{
+    display: flex;
+    width:80%;
+    height: 100vh;
+}

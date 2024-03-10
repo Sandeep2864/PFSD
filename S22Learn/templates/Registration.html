@@ -1,0 +1,48 @@
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="{% static 'registration.css' %}">
+  </head>
+  <body>
+    <div class="SignUpBox">
+      <h3>Need more of your details!</h3>
+      <form action="your_action_page.php" method="post">
+        <label for="name">First Name:</label>
+        <input type="text" id="name" name="name" required /><br>
+        <label for="name">Middle Name:</label>
+        <input type="text" id="name" name="name" required /><br>
+        <label for="name">Last Name:</label>
+        <input type="text" id="name" name="name" required /><br>
+        <!-- <label for="id">Admission No:</label>
+        <input type="text" id="id" name="id" required /><br /> -->
+       
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required /><br />
+        <label for="branch">Branch:</label>
+        <input type="text" id="branch" name="branch" required /><br />
+        <label for="mail">Personal Mail:</label>
+        <input type="email" id="mail" name="mail" required /><br />
+        <label for="cgpa">CGPA:</label>
+        <input
+          type="number"
+          id="cgpa"
+          name="cgpa"
+          step="1"
+          min="0"
+          max="10"
+          required
+        /><br />
+        <label for="number">Class 10 percentage:</label>
+        <input type="number" name="10thmarks" required /><br>
+        <label for="number">Intermediate percentage:</label>
+        <input type="number" name="12thmarks" required /><br>
+         <label for="number">ABC Number(Academic Bank of Credits):</label>
+        <input type="text" name="abcnumber" required /><br>
+      <a href="http://127.0.0.1:8000/dashboard/profile"><button type="button" style="padding:15px 25px;background-color:green;border-radius:10px;margin-left:100px;">Submit</button>  </a>
+      </form>
+    </div>
+  </body>
+</html>

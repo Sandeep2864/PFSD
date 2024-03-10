@@ -1,0 +1,57 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.side{
+    background-color: blueviolet;
+    width:200px;
+    height:100vh;
+    padding:0px;
+    margin:0px;
+    position: fixed;
+}
+.side img{
+    width:100px;
+    height:100px;
+    padding-top:34px;
+    border-radius: 20%;
+}
+.side .flex1 div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top:10px;
+}
+.side .flex2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.side .flex2 .info {
+    padding-top:10px;
+    border:0.25rem solid #ffff;
+    padding-left:70px;
+    padding-right:70px;
+    border-radius: 10px;
+    background-color: darkorange;
+    margin-top:10px;
+}
+.anotherpage .data {
+    margin-left:300px;
+}
+.anotherpage .data .prof .creative {
+    width:600px;
+    height:200px;
+    margin-top: 22px;
+    background-color:rgb(15, 223, 153);
+    border-radius: 15px;
+} 
+.anotherpage .data .prof .creative h2 {
+    padding:12px;
+}
+.anotherpage .data .prof .creative input{
+    padding:50px 100px;
+    border-radius: 12px;
+    padding-right:34px;
+    margin-left:23px;
+}

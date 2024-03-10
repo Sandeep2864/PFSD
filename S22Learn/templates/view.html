@@ -1,0 +1,16 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>List of students:</h1>
+<ul>
+    {% for s in st %}
+    <li>{{s.name}}</li>
+    <li>{{s.age}}</li>
+
+    {% endfor %}
+</ul>
+</body>
+</html>
